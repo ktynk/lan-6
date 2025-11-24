@@ -14,7 +14,7 @@ int main()
         return 1;
     }
 
-    int* dynamoarr = new int[size];
+     int* dynamoarr = (int*)malloc(size * sizeof(int));
 
     for (int i = 0; i < size; i++)
     {
@@ -58,4 +58,5 @@ int main()
     delete[] dynamoarr;
     dynamoarr = nullptr;
     return 0;
+
 }
